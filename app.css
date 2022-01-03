@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    z-index: 100;
+}
+
+.timer {
+    color: white;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.game {
+    display: flex;
+    justify-content: space-around;
+    height: 800px;
+    background-color: lightgrey;
+}
+
+.square2 {
+    background-color: white;
+    /* border: black solid 3px; */
+    height: 405px;
+    width: 405px;
+    margin: 5px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.square1 {
+    background-color: white;
+    /* border: black solid 3px; */
+    height: 405px;
+    width: 405px;
+    margin: 5px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.ball {
+    border-radius: 50%;
+    background-color: green;
+    border: white solid 2px;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 1s all;
+    cursor: grab;
+    font-family: 'Inconsolata', monospace;
+}
+
+.button {
+    margin-right: 40px;
+    margin-left: 40px;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.bbutton:hover,
+.button:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+.button:active {
+    opacity: .5;
+}
+
+.pop_up {
+    position: absolute;
+    top: 25%;
+    right: 75%;
+    z-index: 100;
+    color: red;
+    display: none;
+}
